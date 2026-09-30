@@ -17,7 +17,9 @@ def cadastrar_item(nome: str, quantidade: int, preco_unitario: float) -> dict:
         "preco_unitario": preco_unitario,
     }
 
+
 def calcular_valor_estoque(itens: list) -> float:
+
     total = 0.0
     for item in itens:
         total += item["quantidade"] * item["preco_unitario"]

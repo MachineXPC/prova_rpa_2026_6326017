@@ -23,7 +23,7 @@
 def main():
     ENDPOINT_URL = "https://api.com"
     PORTA = 443
-    TAXA_AMOSTRAGEM = 1.0 
+    TAXA_AMOSTRAGEM = 1.0
     USA_HTTPS = True
 
     parametros = {

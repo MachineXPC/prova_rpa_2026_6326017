@@ -26,6 +26,7 @@ from pathlib import Path
 
 import pandas as pd
 
+
 PASTA = Path(__file__).parent
 
 logging.basicConfig(
@@ -37,6 +38,8 @@ logging.basicConfig(
         logging.StreamHandler(),
     ],
 )
+
+
 def importar_notas(caminho: str) -> float:
 
     try:
@@ -64,6 +67,8 @@ def importar_notas(caminho: str) -> float:
 
         logging.info(f"Termino da tentativa de importacao: {caminho}")
 
+
 if __name__ == "__main__":
+
     importar_notas(str(PASTA / "notas.csv"))
     importar_notas(str(PASTA / "arquivo_inexistente.csv"))
